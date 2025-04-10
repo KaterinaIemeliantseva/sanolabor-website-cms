@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/vendor
+/tools/cene
+/tools/ws
+/tools/web.config
+/.htaccess
+/web.config
+/public/resources/images/icons/Thumbs.db
+/public/resources/images/_icons/Thumbs.db
+/public/resources/images/Thumbs.db
+/public/resources/filemanager/img/Thumbs.db
+/public/resources/datatables/images/Thumbs.db
+/.vs
