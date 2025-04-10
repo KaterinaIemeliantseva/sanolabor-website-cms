@@ -1,0 +1,34 @@
+<?php $handler->html_select2(['id' => 'kategorija', 'label' => 'Kategorija', 'name' => 'kategorije[]', 'multiple' => true, 'url' => '/webapp/select2?table=novice_kategorija', 'get_list' =>  ['id' => (!empty($data->id)) ? $data->id : 0, 'table1' => 'novice_kategorija_mm', 'table2' => 'novice_kategorija', 'field1' => 'id_kategorija', 'field2' => 'id_novica']]); ?>
+<?php $handler->html_select2(['id' => 'avtor_id', 'label' => 'Avtor', 'name' => 'avtor_id', 'url' => '/webapp/select2?table=avtor', 'get_single' => ['id' => (!empty($data->avtor_id)) ? $data->avtor_id : 0, 'table' => 'avtor']]); ?>  
+<?php $handler->html_editor(['label' => 'Opis', 'name' => 'opis', 'value' => (!empty($data->opis)) ? $data->opis : '', 'height' => '100']); ?>
+<?php $handler->html_single_file_upload(['label' => 'Slika', 'name' => 'slika', 'value' => (!empty($data->slika)) ? $data->slika : '', 'required' => false]); ?>
+
+//js
+ var filters = [];
+    filters.push({'naziv' : 'filter_kat', 'index' : 3}); //'check_text' : true
+    createFilter(table, filters);   
+
+//BAL
+<?php
+class EnoteBAL  extends BaseBAL
+{
+    public $dal;
+    public $handler;
+    public $table = "enota";
+    var $user;
+
+    public $audit = true; 
+    public $audit_message_list = 'Enote'; 
+    public $audit_message_single = 'Enota'; 
+
+    function __construct()
+    {
+        global $user;
+
+        $this->dal = new BaseDAL();
+        $this->user = $user;
+        $this->handler = new SuperClass();
+    }
+    /**************************************************************************/
+
+}        

@@ -1,0 +1,118 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "269fb854220abce40c8590b54f0ab0be",
+    "content-hash": "95011e8cf8b2f489a183dda947836b8f",
+    "packages": [
+        {
+            "name": "nikic/php-parser",
+            "version": "v3.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nikic/PHP-Parser.git",
+                "reference": "a1e8e1a30e1352f118feff1a8481066ddc2f234a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/a1e8e1a30e1352f118feff1a8481066ddc2f234a",
+                "reference": "a1e8e1a30e1352f118feff1a8481066ddc2f234a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0|~5.0"
+            },
+            "bin": [
+                "bin/php-parse"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PhpParser\\": "lib/PhpParser"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Nikita Popov"
+                }
+            ],
+            "description": "A PHP parser written in PHP",
+            "keywords": [
+                "parser",
+                "php"
+            ],
+            "time": "2017-09-02 17:10:46"
+        },
+        {
+            "name": "timetoogo/pinq",
+            "version": "3.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TimeToogo/Pinq.git",
+                "reference": "fa55da968d063c5aca384b5298665348da248c08"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TimeToogo/Pinq/zipball/fa55da968d063c5aca384b5298665348da248c08",
+                "reference": "fa55da968d063c5aca384b5298665348da248c08",
+                "shasum": ""
+            },
+            "require": {
+                "nikic/php-parser": "~3.1",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "doctrine/cache": "1.5.*",
+                "phpunit/phpunit": "4.8.*",
+                "satooshi/php-coveralls": "1.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Pinq\\": "Source/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Elliot Levin",
+                    "email": "elliotlevin@hotmail.com"
+                }
+            ],
+            "description": "PHP Integrated Query - A real LINQ library for PHP",
+            "homepage": "http://www.github.com/TimeToogo/Pinq",
+            "keywords": [
+                "collection",
+                "pinq",
+                "query"
+            ],
+            "time": "2017-09-06 06:27:03"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
