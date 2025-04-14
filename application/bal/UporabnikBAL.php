@@ -39,7 +39,7 @@ class UporabnikBAL extends BaseBAL
           if(!empty($data['password_old']))
           {
               $data['password'] = '';
-              $data['password_old'] = sha1($data['password_old']);
+              $data['password_old'] = password_hash($data['password_old'], PASSWORD_DEFAULT);
           }
           else
           {

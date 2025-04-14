@@ -35,7 +35,7 @@ class AdministracijaBAL extends BaseBAL
 	{
         if(!empty($data['password']))
         {
-            $data['password'] = sha1($data['password']);
+            $data['password'] = password_hash($data['password'], PASSWORD_DEFAULT);
         }
         else
         {
